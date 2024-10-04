@@ -50,6 +50,6 @@ Route::get('/surat', function () {
 })->name('surat');
 
 //route landingpage
-Route::get('/homepage', function () {
-    return view('homepage');
-})->name('homepage');
+Route::get('/', function () {
+    return view('landing');
+})->name('landing');
