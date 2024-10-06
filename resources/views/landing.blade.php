@@ -5,18 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    
     <title>Yayasan Baiturrahman Api-Api</title>
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui/dist/full.css">
 
 
     <style>
-        
         #header {
             height: 101.5vh;
             color: rgb(255, 255, 255);
@@ -28,7 +25,7 @@
         }
 
         #program {
-            height: 80vh;
+            height: 45vh;
             color: rgb(255, 255, 255);
             width: 100%;
             background-repeat: no-repeat;
@@ -36,17 +33,16 @@
             margin-top: -10px;
         }
 
-        #card{
+        #card {
             cursor: pointer;
         }
-
     </style>
 </head>
 
 <body>
     <header id="header">
         <nav
-            class="block w-full max-w-screen-2xl py-4 px-8 shadow-md w-full max-w-full rounded-none px-4 shadow-none bg-gradient-to-r from-green-800 via-teal-0 to-teal-0">
+            class=" fixed block w-full max-w-screen-2xl py-4 px-8 shadow-md w-full max-w-full rounded-none px-4 shadow-none bg-gradient-to-r from-green-800 via-teal-0 to-teal-0">
             <div class="container mx-auto flex items-center justify-between text-blue-gray-900">
                 <a href="#"
                     class="block antialiased font-sans  text-base font-light leading-relaxed text-yellow-500 mr-4 cursor-pointer text-lg font-bold">Yayasan
@@ -152,37 +148,74 @@
             </div>
         </nav>
     </header>
-    <div class="bg-gray-200 py-8 sm:py-8" id="program">
-    <h2 class="text-center text-3xl font-bold leading-8 text-gray-900">Program Yayasan</h2>
-    <div class="mt-8 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-8">
-        <div class="bg-gray-100 p-16 rounded shadow-md" id="card">
-            <i class="fas fa-school text-4xl text-yellow-500"></i>
-            <h3 class="mt-4 text-xl font-bold text-orange-800">TK</h3>
-        </div>
+    <div class="bg-green-900 py-8 sm:py-8" id="program">
+        <h2 class="text-center text-3xl font-bold leading-8 text-yellow-500 ">Program Yayasan</h2>
+        <div class="mt-8 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4">
+            <div class="bg-gray-100 py-12 px-20 rounded-3xl text-center shadow-md">
+                <i class="fas fa-school text-4xl text-yellow-500"></i>
+                <h3 class="mt-4 text-center text-xl font-bold text-orange-700">TK</h3>
+            </div>
 
-        <div class="bg-gray-100 p-16 rounded shadow-md">
-            <i class="fas fa-user-plus text-4xl text-yellow-500"></i>
-            <h3 class="mt-4 text-xl font-bold text-orange-800"> SD</h3>
-        </div>
+            <div class="bg-gray-100 py-12 px-20 rounded-3xl  shadow-md">
+                <i class="fas fa-user-plus text-center text-4xl text-yellow-500"></i>
+                <h3 class="mt-4 text-center text-xl font-bold text-orange-700"> SD</h3>
+            </div>
 
-        <div class="bg-gray-100 p-16 rounded shadow-md">
-            <i class="fas fa-school text-4xl text-yellow-500"></i>
-            <h3 class="mt-4 text-xl font-bold text-orange-800">MAN</h3>
-        </div>
+            <div class="bg-gray-100 py-12 px-20 rounded-3xl shadow-md">
+                <i class="fas fa-school text-4xl text-yellow-500"></i>
+                <h3 class="mt-4 text-center text-xl font-bold text-orange-700">MAN</h3>
+            </div>
 
-        <div class="bg-gray-100 p-16 rounded shadow-md">
-            <i class="fas fa-school text-4xl text-yellow-500"></i>
-            <h3 class="mt-4 text-xl font-bold text-orange-800">TPQ</h3>
-        </div>
+            <div class="bg-gray-100 py-12 px-20 rounded-3xl shadow-md">
+                <i class="fas fa-school text-4xl text-yellow-500"></i>
+                <h3 class="mt-4 text-center text-xl font-bold text-orange-700">TPQ</h3>
+            </div>
 
-        <div class="bg-gray-100 p-16 rounded shadow-md">
-            <i class="fas fa-school text-4xl text-yellow-500"></i>
-            <h3 class="mt-4 text-xl font-bold text-orange-800">SMK</h3>
+            <div class="bg-gray-100 py-12 px-20 rounded-3xl shadow-md">
+                <i class="fas  fa-school text-4xl text-yellow-500"></i>
+                <h3 class="mt-4 text-center text-xl font-bold text-orange-700">SMK</h3>
+            </div>
         </div>
     </div>
-    </div>
 
-    
+    <div class="flex bg-gray-200">
+        <div class="w-1/2 p-4">
+            <div class=" flex items-center justify-center ml-[-30px] "><img src="KetuaYayasan.png" alt=""
+                    height="5px" class="w-[23rem] h-[30rem] "></div>
+        </div>
+        <div class="w-1/2 p-4 ">
+            <div class=" items-center justify-center mt-40 mr-16 ">
+                <h3 class="text-center text-3xl font-bold leading-8 text-green-800  ">Bapak Ketua Yayasan</h3>
+                <h2 class="text-center text-3xl font-bold leading-8 text-gray-800 mt-4 ">KETUA YAYASAN </h2>
+                <p class="text-center text-xl font-bold leading-8 text-green-800 mt-4 ">"Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Distinctio sed soluta sequi maiores provident eius accusamus quae
+                    aspernatur quod quisquam, porro minus optio repudiandae fugiat minima perspiciatis quam dolore
+                    cumque.."</p>
+            </div>
+        </div>
+    </div>
+    {{-- <div class=" bg-transparent flex bg-cover bg-center h-screen" style="">
+        <div class="w-1/2 p-4">
+            <h1>ini berita</h1>
+        </div>
+        <div class="w-1/2 p-4">
+            <h2>ini keterangan</h2>
+        </div>
+    </div> --}}
+    <div class="relative h-screen overflow-hidden">
+        <div class="absolute inset-0 bg-fixed bg-center bg-cover" style="background-image: url('bannerabu.png');"></div>
+        <div class="relative  z-10 flex items-center justify-center h-full bg-gray-400 bg-opacity-50">
+            <div class="w-1/2 p-4">
+                <h1 class="text-white text-4xl font-bold">Parallax Background</h1>
+            </div>
+            <div class="w-1/2 p-4">
+                <h1 class="text-white text-4xl font-bold">Parallax Background</h1>
+            </div>
+        </div>
+      </div>
+
+
+
 
 </body>
 
