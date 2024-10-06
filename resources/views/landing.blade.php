@@ -23,6 +23,7 @@
             background-size: cover;
             margin-top: -10px;
         }
+
         #program {
             height: 45vh;
             color: rgb(255, 255, 255);
@@ -40,7 +41,8 @@
 
 <body>
     <header id="header">
-        <nav class=" z-10 fixed block w-full max-w-screen-2xl py-4 px-8 shadow-md w-full max-w-full rounded-none px-4 shadow-none bg-gradient-to-r from-green-800 via-green-800 to-teal-0">
+        <nav
+            class=" z-10 fixed block w-full max-w-screen-2xl py-4 px-8 shadow-md w-full max-w-full rounded-none px-4 shadow-none bg-gradient-to-r from-green-800 via-green-800 to-teal-0">
             <div class="container mx-auto flex items-center justify-between text-blue-gray-900">
                 <a href="#"
                     class="block antialiased font-sans  text-base  leading-relaxed text-yellow-500 mr-4 cursor-pointer  font-bold ">Yayasan
@@ -179,7 +181,8 @@
     <div class="flex bg-gray-200 space-y-8 ">
         <div class="w-1/4 p-4 items-center">
             <div class=" justify-center  bg-green-800 rounded-tl-[120px] rounded-br-[120px] w-[23rem] h-[30rem] ml-44">
-                <img src="KetuaYayasan.png" alt="" height="5px" class="w-[23rem] h-[30rem] rounded-br-[120px]">
+                <img src="KetuaYayasan.png" alt="" height="5px"
+                    class="w-[23rem] h-[30rem] rounded-br-[120px]">
             </div>
         </div>
         <div class="w-2/4 p-8 ml-44">
@@ -195,7 +198,8 @@
     </div>
     {{-- Activity --}}
     <div class="relative h-screen overflow-hidden">
-        <div class="absolute inset-0 bg-fixed bg-center bg-cover" style="background-image: url('bannerabu.png');"></div>
+        <div class="absolute inset-0 bg-fixed bg-center bg-cover" style="background-image: url('bannerabu.png');">
+        </div>
         <div class="relative  z-2 flex items-center justify-center h-full bg-black bg-opacity-30 space-y-8">
             {{-- <div class="w-1/2 p-4">
                 <div class="bg-gray-200 rounded-xl w-[23rem] h-[30rem]">
@@ -207,22 +211,68 @@
                     <img src="ngaji.webp" alt=""height="5px" class=" rounded-xl ">
                 </div>
             </div> --}}
-            <div class=" bg-gray-100 bg-opacity-90 mt-8 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4 w-[80rem] h-[30rem] rounded-tl-[120px] rounded-br-[120px]">
+            <div
+                class=" bg-gray-100 bg-opacity-90 mt-8 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4 w-[80rem] h-[30rem] rounded-tl-[120px] rounded-br-[120px]">
                 <div class=" py-12 px-20 rounded-3xl  ">
                     <h3 class="mt-4 text-xl font-bold text-gray-900">AKTIVITAS YAYASAN</h3>
-                    <h3 class="mt-4 text-lg  text-orange-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis doloremque asperiores possimus omnis modi voluptas saepe, nihil reiciendis est odit eius dignissimos nam numquam amet, rem et molestias quis?</h3>
+                    <h3 class="mt-4 text-lg  text-orange-700">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        A facilis doloremque asperiores possimus omnis modi voluptas saepe, nihil reiciendis est odit
+                        eius dignissimos nam numquam amet, rem et molestias quis?</h3>
                 </div>
-    
+
                 <div class="  py-12 px-20 rounded-3xl  ">
                     <img src="ngaji.webp" alt=""height="5px" class=" rounded-xl ">
                 </div>
             </div>
         </div>
-      </div>
+    </div>
 
+    {{-- Berita --}}
+    <div class="bg-gray-200 py-8 sm:py-8">
+        <h2 class="text-center text-3xl font-bold leading-8 text-yellow-500 ">Berita</h2>
+        <div class="flex mt-8 flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4 w-[80rem] h-[35rem] ml-[120px] ">
+            <div class="bg-green-800 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md" onclick="expand(this)">
+                <h2 class="text-3xl font-bold leading-8 text-yellow-500">Judul Berita</h2>
+                <img src="ngaji.webp" alt="">
+                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
+            </div>
+            <div class="bg-green-700 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md " onclick="expand(this)">
+                <h2 class="text-3xl font-bold leading-8 text-yellow-500">Judul Berita</h2>
+                <img src="ngaji.webp" alt="">
+                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
+            </div>
+            <div class="bg-green-600 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md" onclick="expand(this)">
+                <h2 class="text-3xl font-bold leading-8 text-yellow-500">Judul Berita</h2>
+                <img src="ngaji.webp" alt="">
+                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
+            </div>
+        </div>
+    </div>
+        <script>
+            function expand(element) {
+                let siblings = Array.from(element.parentNode.children);
+                siblings.forEach(sib => {
+                    if (sib !== element) {
+                        sib.classList.remove('flex-[2]');
+                        sib.classList.add('flex-[1]');
+                    }
+                });
+                element.classList.remove('flex-[1]');
+                element.classList.add('flex-[2]');
+            }
+        </script>
 
-
-
+    {{-- footer --}}
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2024 Yayasan Baiturrahman. All rights reserved.</p>
+          <div class="mt-4 flex justify-center space-x-4">
+            <a href="#" class="hover:text-gray-400">Instagram</a>
+            <a href="#" class="hover:text-gray-400">Facebook</a>
+            <a href="#" class="hover:text-gray-400">Contact Us</a>
+          </div>
+        </div>
+    </footer>
 </body>
 
 </html>
