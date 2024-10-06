@@ -15,7 +15,7 @@
 
     <style>
         #header {
-            height: 101.5vh;
+            height: 110vh;
             color: rgb(255, 255, 255);
             width: 100%;
             background-image: url(banner1.png);
@@ -23,7 +23,6 @@
             background-size: cover;
             margin-top: -10px;
         }
-
         #program {
             height: 45vh;
             color: rgb(255, 255, 255);
@@ -41,11 +40,10 @@
 
 <body>
     <header id="header">
-        <nav
-            class=" fixed block w-full max-w-screen-2xl py-4 px-8 shadow-md w-full max-w-full rounded-none px-4 shadow-none bg-gradient-to-r from-green-800 via-teal-0 to-teal-0">
+        <nav class=" z-10 fixed block w-full max-w-screen-2xl py-4 px-8 shadow-md w-full max-w-full rounded-none px-4 shadow-none bg-gradient-to-r from-green-800 via-green-800 to-teal-0">
             <div class="container mx-auto flex items-center justify-between text-blue-gray-900">
                 <a href="#"
-                    class="block antialiased font-sans  text-base font-light leading-relaxed text-yellow-500 mr-4 cursor-pointer text-lg font-bold">Yayasan
+                    class="block antialiased font-sans  text-base  leading-relaxed text-yellow-500 mr-4 cursor-pointer  font-bold ">Yayasan
                     Baiturrahman</a>
                 <div class="hidden lg:block">
                     <ul class="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
@@ -177,14 +175,15 @@
             </div>
         </div>
     </div>
-
-    <div class="flex bg-gray-200">
-        <div class="w-1/2 p-4">
-            <div class=" flex items-center justify-center ml-[-30px] "><img src="KetuaYayasan.png" alt=""
-                    height="5px" class="w-[23rem] h-[30rem] "></div>
+    {{-- Ketua Yayasan --}}
+    <div class="flex bg-gray-200 space-y-8 ">
+        <div class="w-1/4 p-4 items-center">
+            <div class=" justify-center  bg-green-800 rounded-tl-[120px] rounded-br-[120px] w-[23rem] h-[30rem] ml-44">
+                <img src="KetuaYayasan.png" alt="" height="5px" class="w-[23rem] h-[30rem] rounded-br-[120px]">
+            </div>
         </div>
-        <div class="w-1/2 p-4 ">
-            <div class=" items-center justify-center mt-40 mr-16 ">
+        <div class="w-2/4 p-8 ml-44">
+            <div class=" items-center justify-center  ">
                 <h3 class="text-center text-3xl font-bold leading-8 text-green-800  ">Bapak Ketua Yayasan</h3>
                 <h2 class="text-center text-3xl font-bold leading-8 text-gray-800 mt-4 ">KETUA YAYASAN </h2>
                 <p class="text-center text-xl font-bold leading-8 text-green-800 mt-4 ">"Lorem ipsum dolor sit amet
@@ -194,22 +193,29 @@
             </div>
         </div>
     </div>
-    {{-- <div class=" bg-transparent flex bg-cover bg-center h-screen" style="">
-        <div class="w-1/2 p-4">
-            <h1>ini berita</h1>
-        </div>
-        <div class="w-1/2 p-4">
-            <h2>ini keterangan</h2>
-        </div>
-    </div> --}}
+    {{-- Activity --}}
     <div class="relative h-screen overflow-hidden">
         <div class="absolute inset-0 bg-fixed bg-center bg-cover" style="background-image: url('bannerabu.png');"></div>
-        <div class="relative  z-10 flex items-center justify-center h-full bg-gray-400 bg-opacity-50">
-            <div class="w-1/2 p-4">
-                <h1 class="text-white text-4xl font-bold">Parallax Background</h1>
+        <div class="relative  z-2 flex items-center justify-center h-full bg-black bg-opacity-30 space-y-8">
+            {{-- <div class="w-1/2 p-4">
+                <div class="bg-gray-200 rounded-xl w-[23rem] h-[30rem]">
+                    <h1 class="text-white text-4xl font-bold">Parallax Background</h1>
+                </div>
             </div>
             <div class="w-1/2 p-4">
-                <h1 class="text-white text-4xl font-bold">Parallax Background</h1>
+                <div class="bg-gray-200 rounded-xl w-[23rem] h-[30rem]">
+                    <img src="ngaji.webp" alt=""height="5px" class=" rounded-xl ">
+                </div>
+            </div> --}}
+            <div class=" bg-gray-100 bg-opacity-90 mt-8 flex flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4 w-[80rem] h-[30rem] rounded-tl-[120px] rounded-br-[120px]">
+                <div class=" py-12 px-20 rounded-3xl  ">
+                    <h3 class="mt-4 text-xl font-bold text-gray-900">AKTIVITAS YAYASAN</h3>
+                    <h3 class="mt-4 text-lg  text-orange-700">Lorem ipsum dolor sit amet consectetur adipisicing elit. A facilis doloremque asperiores possimus omnis modi voluptas saepe, nihil reiciendis est odit eius dignissimos nam numquam amet, rem et molestias quis?</h3>
+                </div>
+    
+                <div class="  py-12 px-20 rounded-3xl  ">
+                    <img src="ngaji.webp" alt=""height="5px" class=" rounded-xl ">
+                </div>
             </div>
         </div>
       </div>
