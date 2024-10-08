@@ -51,52 +51,178 @@
                     <ul class="mb-4 mt-2 flex flex-col gap-3 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
                         <a href="/">
                             <li
-                                class="block antialiased font-sans text-base  leading-relaxed hover:text-green-200 p-1 font-medium">
-                                Home
-                            </li>
-                        </a><a href="/about">
+                                class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
+                                Home</li>
+                        </a>
+                        <div class="relative" id="dropdown-wrapper-about">
+                            <a href="/about" id="dropdown-toggle-about">
+                                <li
+                                    class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
+                                    Tentang Kami</li>
+                            </a>
+                            <ul class="absolute hidden bg-green-800 bg-opacity-60 shadow-md rounded-lg mt-2"
+                                id="dropdown-menu-about">
+                                <a href="/about/sejarah">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Sejarah</li>
+                                </a>
+                                <a href="/about/visi-misi">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Visi Misi</li>
+                                </a>
+                                <a href="/about/mars-yayasan">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Mars Yayasan</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="relative" id="dropdown-wrapper-news">
+                            <a href="/info" id="dropdown-toggle-news">
+                                <li
+                                    class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
+                                    Berita</li>
+                            </a>
+                            <ul class="absolute hidden bg-green-800 bg-opacity-60 shadow-md rounded-lg mt-2"
+                                id="dropdown-menu-news">
+                                <a href="/info/terbaru">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Berita Terbaru</li>
+                                </a>
+                                <a href="/info/kegiatan">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Kegiatan Yayasan Baiturrahman</li>
+                                </a>
+                                <a href="/info/program">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Program</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="relative" id="dropdown-wrapper-library">
+                            <a href="/perpus" id="dropdown-toggle-library">
+                                <li
+                                    class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
+                                    Perpustakaan</li>
+                            </a>
+                            <ul class="absolute hidden bg-green-800 bg-opacity-60 shadow-md rounded-lg mt-2"
+                                id="dropdown-menu-library">
+                                <a href="/perpus/profil">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Profile Perpustakaan</li>
+                                </a>
+                                <a href="/perpus/perpusonline">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Perpustakaan Online</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="relative" id="dropdown-wrapper-alumni">
+                            <a href="/alumni" id="dropdown-toggle-alumni">
+                                <li
+                                    class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
+                                    Pojok Alumni</li>
+                            </a>
+                            <ul class="absolute hidden bg-green-800 bg-opacity-60 shadow-md rounded-lg mt-2"
+                                id="dropdown-menu-alumni">
+                                <a href="/alumni/login">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Login</li>
+                                </a>
+                                <a href="/alumni/legalisir">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        Legalisisr Online</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <div class="relative" id="dropdown-wrapper-ppdb">
+                            <a href="/ppdb" id="dropdown-toggle-ppdb">
+                                <li
+                                    class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
+                                    PPDB</li>
+                            </a>
+                            <ul class="absolute hidden bg-green-800 bg-opacity-60 shadow-md rounded-lg mt-2"
+                                id="dropdown-menu-ppdb">
+                                <a href="/ppdb/tk">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        TK</li>
+                                </a>
+                                <a href="/ppdb/sd">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        SD</li>
+                                </a>
+                                <a href="/ppdb/madin">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        MaDin</li>
+                                </a>
+                                <a href="/ppdb/tpq">
+                                    <li
+                                        class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-2">
+                                        TPQ</li>
+                                </a>
+                            </ul>
+                        </div>
+                        <a href="#">
                             <li
                                 class="block antialiased font-sans text-base leading-relaxed hover:text-green-200 p-1 font-medium">
-                                Tentang Kami
-                            </li>
-                        </a><a href="/info">
-                            <li
-                                class="block antialiased font-sans text-base  leading-relaxed hover:text-green-200 p-1 font-medium">
-                                Berita
-                            </li>
-                        </a><a href="/perpus">
-                            <li
-                                class="block antialiased font-sans text-base  leading-relaxed hover:text-green-200 p-1 font-medium">
-                                Perpustakaan
-                            </li>
-                        </a><a href="/alumni">
-                            <li
-                                class="block antialiased font-sans text-base  leading-relaxed hover:text-green-200 p-1 font-medium">
-                                Pojok Alumni
-                            </li>
-                        </a><a href="#">
-                            <li
-                                class="block antialiased font-sans text-base  leading-relaxed hover:text-green-200 p-1 font-medium">
-                                PPDB
-                            </li>
-                        </a><a href="#">
-                            <li
-                                class="block antialiased font-sans text-base  leading-relaxed hover:text-green-200 p-1 font-medium">
-                                Hubungi Kami
-                            </li>
+                                Hubungi Kami</li>
                         </a>
                     </ul>
                 </div>
+
+                <script>
+                    document.getElementById('dropdown-toggle-about').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const menu = document.getElementById('dropdown-menu-about');
+                        menu.classList.toggle('hidden');
+                    });
+                    document.getElementById('dropdown-toggle-news').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const menuNews = document.getElementById('dropdown-menu-news');
+                        const menuAbout = document.getElementById('dropdown-menu-about');
+                        menuNews.classList.toggle('hidden');
+                        menuAbout.classList.add('hidden');
+                    });
+                    document.getElementById('dropdown-toggle-library').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const menu = document.getElementById('dropdown-menu-library');
+                        menu.classList.toggle('hidden');
+                    });
+                    document.getElementById('dropdown-toggle-alumni').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const menu = document.getElementById('dropdown-menu-alumni');
+                        menu.classList.toggle('hidden');
+                    });
+                    document.getElementById('dropdown-toggle-ppdb').addEventListener('click', function(event) {
+                        event.preventDefault();
+                        const menu = document.getElementById('dropdown-menu-ppdb');
+                        menu.classList.toggle('hidden');
+                    });
+                </script>
+
+
                 {{-- <button href="/login" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-yellow-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none  hidden lg:inline-block"
                     type="button" data-ripple-light="true">
                     Sign in</button> --}}
-                    <a href="/login">
-                        <li
+                <a href="/login">
+                    <li
                         class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-yellow-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none hidden lg:inline-block">
-                            Sign in
-                        </li>
-                    </a>
-                    <button
+                        Sign in
+                    </li>
+                </a>
+                <button
                     class="relative align-middle select-none font-sans font-medium text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none w-8 max-w-[32px] h-8 max-h-[32px] rounded-lg text-xs text-blue-gray-500 hover:bg-blue-gray-500/10 active:bg-blue-gray-500/30 ml-auto inline-block text-blue-gray-900 lg:hidden"
                     type="button" data-ripple-dark="true" data-collapse-target="navbar">
                     <span class="absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"><svg
@@ -236,47 +362,57 @@
     {{-- Berita --}}
     <div class="bg-gray-200 py-8 sm:py-8">
         <h2 class="text-center text-3xl font-bold leading-8 text-yellow-500 ">Berita</h2>
-        <div class="flex mt-8 flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4 w-[80rem] h-[35rem] ml-[120px] ">
-            <div class="bg-green-800 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md" onclick="expand(this)">
+        <div
+            class="flex mt-8 flex-col md:flex-row justify-center space-y-8 md:space-y-0 md:space-x-4 w-[80rem] h-[35rem] ml-[120px] ">
+            <div class="bg-green-800 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md"
+                onclick="expand(this)">
                 <h2 class="text-3xl font-bold leading-8 text-yellow-500">Judul Berita</h2>
                 <img src="ngaji.webp" alt="">
-                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
+                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro
+                    nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo
+                    magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
             </div>
-            <div class="bg-green-700 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md " onclick="expand(this)">
+            <div class="bg-green-700 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md "
+                onclick="expand(this)">
                 <h2 class="text-3xl font-bold leading-8 text-yellow-500">Judul Berita</h2>
                 <img src="ngaji.webp" alt="">
-                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
+                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro
+                    nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo
+                    magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
             </div>
-            <div class="bg-green-600 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md" onclick="expand(this)">
+            <div class="bg-green-600 py-12 px-20 transition-all duration-500 ease-in-out rounded-xl shadow-md"
+                onclick="expand(this)">
                 <h2 class="text-3xl font-bold leading-8 text-yellow-500">Judul Berita</h2>
                 <img src="ngaji.webp" alt="">
-                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
+                <p class="text-gray-200 text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid porro
+                    nisi cum reiciendis molestias, fugiat aspernatur velit quasi perspiciatis mollitia error odit quo
+                    magnam, suscipit, consectetur voluptatum vitae adipisci saepe.</p>
             </div>
         </div>
     </div>
-        <script>
-            function expand(element) {
-                let siblings = Array.from(element.parentNode.children);
-                siblings.forEach(sib => {
-                    if (sib !== element) {
-                        sib.classList.remove('flex-[2]');
-                        sib.classList.add('flex-[1]');
-                    }
-                });
-                element.classList.remove('flex-[1]');
-                element.classList.add('flex-[2]');
-            }
-        </script>
+    <script>
+        function expand(element) {
+            let siblings = Array.from(element.parentNode.children);
+            siblings.forEach(sib => {
+                if (sib !== element) {
+                    sib.classList.remove('flex-[2]');
+                    sib.classList.add('flex-[1]');
+                }
+            });
+            element.classList.remove('flex-[1]');
+            element.classList.add('flex-[2]');
+        }
+    </script>
 
     {{-- footer --}}
     <footer class="bg-green-800 text-white py-6">
         <div class="container mx-auto text-center">
-          <p>&copy; 2024 Yayasan Baiturrahman. All rights reserved.</p>
-          <div class="mt-4 flex justify-center space-x-4">
-            <a href="#" class="hover:text-gray-400">Instagram</a>
-            <a href="#" class="hover:text-gray-400">Facebook</a>
-            <a href="#" class="hover:text-gray-400">Contact Us</a>
-          </div>
+            <p>&copy; 2024 Yayasan Baiturrahman. All rights reserved.</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#" class="hover:text-gray-400">Instagram</a>
+                <a href="#" class="hover:text-gray-400">Facebook</a>
+                <a href="#" class="hover:text-gray-400">Contact Us</a>
+            </div>
         </div>
     </footer>
 </body>
