@@ -185,30 +185,68 @@
                 <script>
                     document.getElementById('dropdown-toggle-about').addEventListener('click', function(event) {
                         event.preventDefault();
-                        const menu = document.getElementById('dropdown-menu-about');
-                        menu.classList.toggle('hidden');
+                        const menuNews = document.getElementById('dropdown-menu-news');
+                        const menuAbout = document.getElementById('dropdown-menu-about');
+                        const menuAlumni = document.getElementById('dropdown-menu-alumni');
+                        const menuPpdb = document.getElementById('dropdown-menu-ppdb');
+                        const menuLibrary = document.getElementById('dropdown-menu-library');
+                        menuNews.classList.add('hidden');
+                        menuAlumni.classList.add('hidden');
+                        menuPpdb.classList.add('hidden');
+                        menuLibrary.classList.add('hidden');
+                        menuAbout.classList.toggle('hidden');
                     });
                     document.getElementById('dropdown-toggle-news').addEventListener('click', function(event) {
                         event.preventDefault();
                         const menuNews = document.getElementById('dropdown-menu-news');
                         const menuAbout = document.getElementById('dropdown-menu-about');
+                        const menuAlumni = document.getElementById('dropdown-menu-alumni');
+                        const menuPpdb = document.getElementById('dropdown-menu-ppdb');
+                        const menuLibrary = document.getElementById('dropdown-menu-library');
                         menuNews.classList.toggle('hidden');
+                        menuAlumni.classList.add('hidden');
+                        menuPpdb.classList.add('hidden');
+                        menuLibrary.classList.add('hidden');
                         menuAbout.classList.add('hidden');
                     });
                     document.getElementById('dropdown-toggle-library').addEventListener('click', function(event) {
                         event.preventDefault();
-                        const menu = document.getElementById('dropdown-menu-library');
-                        menu.classList.toggle('hidden');
+                        const menuNews = document.getElementById('dropdown-menu-news');
+                        const menuAbout = document.getElementById('dropdown-menu-about');
+                        const menuAlumni = document.getElementById('dropdown-menu-alumni');
+                        const menuPpdb = document.getElementById('dropdown-menu-ppdb');
+                        const menuLibrary = document.getElementById('dropdown-menu-library');
+                        menuNews.classList.add('hidden');
+                        menuAlumni.classList.add('hidden');
+                        menuPpdb.classList.add('hidden');
+                        menuLibrary.classList.toggle('hidden');
+                        menuAbout.classList.add('hidden');
                     });
                     document.getElementById('dropdown-toggle-alumni').addEventListener('click', function(event) {
                         event.preventDefault();
-                        const menu = document.getElementById('dropdown-menu-alumni');
-                        menu.classList.toggle('hidden');
+                        const menuNews = document.getElementById('dropdown-menu-news');
+                        const menuAbout = document.getElementById('dropdown-menu-about');
+                        const menuAlumni = document.getElementById('dropdown-menu-alumni');
+                        const menuPpdb = document.getElementById('dropdown-menu-ppdb');
+                        const menuLibrary = document.getElementById('dropdown-menu-library');
+                        menuNews.classList.add('hidden');
+                        menuAlumni.classList.toggle('hidden');
+                        menuPpdb.classList.add('hidden');
+                        menuLibrary.classList.add('hidden');
+                        menuAbout.classList.add('hidden');
                     });
                     document.getElementById('dropdown-toggle-ppdb').addEventListener('click', function(event) {
                         event.preventDefault();
-                        const menu = document.getElementById('dropdown-menu-ppdb');
-                        menu.classList.toggle('hidden');
+                        const menuNews = document.getElementById('dropdown-menu-news');
+                        const menuAbout = document.getElementById('dropdown-menu-about');
+                        const menuAlumni = document.getElementById('dropdown-menu-alumni');
+                        const menuPpdb = document.getElementById('dropdown-menu-ppdb');
+                        const menuLibrary = document.getElementById('dropdown-menu-library');
+                        menuNews.classList.add('hidden');
+                        menuAlumni.classList.add('hidden');
+                        menuPpdb.classList.toggle('hidden');
+                        menuLibrary.classList.add('hidden');
+                        menuAbout.classList.add('hidden');
                     });
                 </script>
 

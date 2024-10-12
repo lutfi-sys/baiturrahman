@@ -92,4 +92,29 @@ else {
     return redirect()->route('berita.store')->with('error', 'Berita not found');
 }
 }
+
+
+private function validatePhoneNumber($phone)
+{
+    try {
+        $response = $this->client->request('GET', 'https://phonevalidation.abstractapi.com/v1/', [
+            'query' => [
+                'api_key' => env('ABSTRACT_API_KEY'),
+                'phone' => $phone,
+                'country' => 'ID',
+            ],
+        ]);
+
+        $result = json_decode($response->getBody(), true);
+        \Log::info('Phone validation response: ', $result);
+
+        return isset($result['valid']) ? $result['valid'] : false;
+    } catch (\Exception $e) {
+        \Log::error('Phone validation error: ', ['error' => $e->getMessage()]);
+        return false;
+    }
+}
+
+
+
 }
