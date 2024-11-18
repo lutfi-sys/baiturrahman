@@ -51,5 +51,10 @@ Route::get('/surat', function () {
 
 //route landingpage
 Route::get('/', function () {
-    return view('landing');
+    return view('layout.landing');
 })->name('landing');
+
+//route about landing page
+Route::get('/about/sejarah',function(){
+    return view('layout.sejarah');
+})->name('sejarah');
